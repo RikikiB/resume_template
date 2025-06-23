@@ -1,0 +1,25 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.env
+*.env
+*.log
+
+# === macOS ===
+.DS_Store
+
+# === Output PDFs ===
+*.pdf
+
+# === VSCode (if you're using it) ===
+.vscode/
+
+# === Virtual Environments ===
+venv/
+env/
+.idea/
+
+# === OS Metadata ===
+Thumbs.db
