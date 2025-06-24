@@ -104,10 +104,9 @@ column_block.setStyle(TableStyle([
     ('BOX', (0, 0), (1, 1), 0.5, colors.HexColor("#ff66c4")),
     ('INNERPADDING', (0, 0), (-1, -1), 12),
     ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-    ('LINEBEFORE', (1, 0), (1, 0), 1, colors.HexColor("#ff66c4")),  # optional divider
+    ('LINEBEFORE', (1, 0), (1, 0), 1, colors.HexColor("#ff66c4")),
 ]))
 
-# Then your contact info block comes AFTER everything
 contact = []
 
 contact.append(Paragraph("The resume’s smart, the person behind it? Smarter, shall we connect?", styles['SignatureLineCentered']))
@@ -125,7 +124,6 @@ flowables = [header_with_background] + flowables + [flowables_block_section]
 
 flowables.append(KeepTogether(column_block))
 
- # Adjust to push to bottom
 flowables.extend(contact)
 
 doc.build(flowables)
